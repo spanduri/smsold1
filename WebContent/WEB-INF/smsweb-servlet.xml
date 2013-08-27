@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 
-	 <bean id="fasMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+	 <bean id="SmsWebMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
 		<property name="mappings">
 			<props>
 				<prop key="/test.htm">testController</prop>
@@ -29,10 +29,4 @@
             <value>.jsp</value>
         </property>
     </bean>
-    
-    <bean name="/welcome.htm" class="com.vaannila.HelloWorldController" >
-        <property name="message" value="Hello World!" />
-    </bean>
-	
-
-</beans>
+ </beans>
